@@ -85,6 +85,21 @@ def hangman_gameplay(word):
       hangman_stage += 1
     else:
       print("Something went wrong. Please try again.")
-    
+
+print("welcome to Hangman!")
+while True:
+  hangman_gameplay(select_word())
+  while keep_going == True:
+    play_again = ("would you like to play again?(y/n)")
+    if play_again.lower() == "y":
+      print("Okay, let's play again! Loading another game...")
+      keep_going == False
+    elif play_again.lower() == "n":
+      print("That's okay! Come back anytime to play hangman with me!")
+      keep_going == False
+      exit()
+    else:
+      print("Sorry, the only available options are 'y' and 'n'. Please pick one of these available options.")
+  
   
   
