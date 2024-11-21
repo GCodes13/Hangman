@@ -5,7 +5,11 @@ from random import choice
 from time import sleep
 
 # Load dictionary
-dictionary = ["avacado","hello"]
+dictionary = []
+with open("dictionary.txt") as dictionary_words:
+  for word in dictionary_words:
+     dictionary.append(word.strip())
+
 hangman_stages = ['''
   +---+
   |   |
