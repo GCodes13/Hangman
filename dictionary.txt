@@ -1,0 +1,1 @@
+#Please enter words each on new line to avoid potential errors when running main.py
